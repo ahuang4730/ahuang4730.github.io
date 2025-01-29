@@ -5,21 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angela Huang</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Doto:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <nav>
         <p>Angela Huang</p>
-        <p><a href="contact.html">Contact Angela Huang</a></p>
+        <p><a href="contact.html" class="nav-button">Contact Angela Huang</a></p>
     </nav>
 
-    <section>
+    <section class="splash">
 
         <h1>Angela Huang</h1>
         <img src="Images/headshot.jpg" alt="look it's me" style="width: 100px; height: auto;">
 
-        <p> 815 Ansbeth Way, Athens, GA 30606, (631)-413-6015, ahuang4730&#64gmail.com </p>
-        <p> I enjoy doing things and stuff. Mostly gaming and napping. I am a hard worker promise. </p>
+        <p class="contact-info"> 815 Ansbeth Way, Athens, GA 30606, (631)-413-6015, ahuang4730&#64gmail.com </p>
+        <p class="motto"> I enjoy doing things and stuff. Mostly gaming and napping. I am a hard worker pinky promise. </p>
     </section>
 
     <hr>
@@ -27,14 +31,14 @@
     <section>
         <h2>Education</h2>
 
-        <p>UGA, Expected Graduation date: Spring 2026, Computer Science Major, GPA: 3.1, Relevant Courses: Algorithms, 
+        <p class="education-text">UGA, Expected Graduation date: Spring 2026, Computer Science Major, GPA: 3.1, Relevant Courses: Algorithms, 
             Systems Programming, Data Structures, Web Programming</p>
     </section>
 
     <section>
         <h2> Honors and Awards</h2>
 
-        <dl>
+        <dl class="honors-list">
             <dt>None :&#40;</dt>
             <dd>Angela needs to work on getting some awards</dd>
 
@@ -82,26 +86,42 @@
         </dl>
     </section>
 
-    <section>
+    <section class="centered-section">
         <h2>Projects</h2>
-        <h3>Royal Flush, Indie Game</h3>
-        <ul>
-
-            <li>Designed and developed the primary characters' artworks and visual aesthetic for gameplay.</li>
-            <li>Structured a storyline to enhance player engagement and align with gameplay mechanics.</li>
-            <li>Conducted quality assurance checks through brief code reviews, ensuring consistency and functionality.</li>
-
-        </ul>
-
-        <h3>Roblox Game, Personal Project</h3>
-
-        <ul>
-            <li> Learning and utilizing Lua programming to develop immersive and engaging games within Roblox Studio.</li>
-            <li>Gained hands-on experience with node-based coding and  3D environment tools to enhance gameplay functionality.</li>
-            <li>Designed and implemented user-friendly interfaces (UI) to improve the overall player experience.</li>
-
-        </ul>
+    
+        <div class="three-col">
+            <div class="card">
+                <img src="images/cards.png" alt="Cards and stuff" style="width: 100px; height: auto;">
+                <h3>Royal Flush, Indie Game</h3>
+                <ul>
+                    <li>Designed and developed primary characters' artworks.</li>
+                    <li>Structured a storyline to enhance player engagement.</li>
+                    <li>Conducted quality assurance checks through brief code reviews.</li>
+                </ul>
+            </div>
+    
+            <div class="card">
+                <img src="images/roblox.png" alt="Roblox icon" style="width: 100px; height: auto;">
+                <h3>Roblox Game, Personal Project</h3>
+                <ul>
+                    <li>Learning and utilizing Lua programming for immersive game development.</li>
+                    <li>Gained hands-on experience with node-based coding and 3D tools.</li>
+                    <li>Designed and implemented user-friendly interfaces.</li>
+                </ul>
+            </div>
+    
+            <div class="card">
+                <img src="images/face.jpg" alt="Hehe haha" style="width: 100px; height: auto;">
+                <h3>This website</h3>
+                <ul>
+                    <li>Changed fonts and stuff.</li>
+                    <li>Learned HTML and CSS.</li>
+                    <li>It's not that impressive but it will be.</li>
+                </ul>
+            </div>
+        </div>
     </section>
+    
 
     <footer>
         &#169; <a href="contact.html">Angela Huang</a>

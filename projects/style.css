@@ -1,0 +1,81 @@
+/* Reset basic styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Raleway', sans-serif;
+    color: #444;
+    background-color: #fff;
+    padding: 2rem;
+    line-height: 1.6;
+    font-weight: 300; /* Thin, modern look */
+  }  
+  
+  /* Header styles */
+  header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  header h1 {
+    font-weight: 300; /* Thin */
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  nav a {
+    font-weight: 300;
+    margin: 0 10px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  nav a:hover {
+    color: #000;
+  }
+
+  nav a.active {
+    color: #111;         /* darkest for selected tab */
+    font-weight: 500;
+  }
+  
+  hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 2rem 0;
+  }
+  
+  /*projects */
+
+  .project-preview a {
+    text-decoration: none;   /* removes underline */
+    color: #333;             /* optional: sets link color */
+  }
+  
+  .project-preview a:hover {
+    text-decoration: underline; /* optional: add underline on hover */
+    color: #000;                /* optional: darker color on hover */
+  }
+
+  .project-card {
+    border: 1px solid #ccc;
+    padding: 1.2rem;
+    border-radius: 8px;
+    background-color: #fafafa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }

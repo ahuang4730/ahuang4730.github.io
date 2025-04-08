@@ -1,253 +1,119 @@
-/* Note for grader I wrote these notes for the code myself so that I can
-refer back to this and know what they were for for learning purposes.
-I hope style isn't graded because most things on here are like me testing
-settings and things out. */
-
-body {
+/* Reset basic styles */
+* {
+    box-sizing: border-box;
     margin: 0;
-}
-
-nav {
-    display: flex; /* Makes nav a flex container */
-    align-items: center;
-    background-color: #525868; 
-    color: white; /* Text color */
-    padding: 15px; /* Space inside the nav */
-    font-size: 25px; 
-    text-align: center; /* Center-align the text */
-    border-bottom: 3px solid #8b9dbf; /* Add a bottom border for emphasis */
-}
-
-nav p:last-of-type {
-    margin-left: auto; /* Pushes button container to the right */
-}
-
-.nav-button {
-    display: inline-block; /* Common use for buttons, images, or elements that need inline and block-like behaviors. */
-    background-color: #ffffff; 
-    color: rgb(0, 0, 0); 
-    padding: 10px 15px; /* Space inside the button */
-    border:2px solid black; 
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    font-size: 12px;
-    font-weight: bold;
-    cursor: pointer; /* Make it look clickable */
-    transition: background 0.3s ease; /* Smooth color transition */
-}
-
-.nav-button:hover {
-    background-color: #a7a7a7; /* Darker shade on hover */
-}
-
-footer {
-    display: flex; 
-    justify-content: center; /* Centers children horizontally */
-    align-items: center; /* Centers children vertically */
-    background-color: #525868; 
-    color: white; 
-    padding: 20px; /* Adds space inside the footer */
-    font-size: 14px; /* Adjusts text size */
-    border-top: 3px solid #8b9dbf; /* Optional: Adds a top border */
-}
-
-.splash {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
-    text-align: center; 
-    background-color: #f1f1f1; 
-    color: rgb(0, 0, 0); 
-    padding: 50px; 
-    border-bottom: 5px solid #525868; 
-}
-
-.splash h1 {
-    font-family: 'Anton SC', sans-serif;
-    font-size: 36px; 
-    font-weight: bold;
-    color:cadetblue;
-    margin-bottom: 10px;
-}
-
-.splash img {
-    width: 200px; /* Makes the headshot bigger */
-    height: auto;
-    border-radius: 50%; /* Makes the image circular */
-    border: 3px solid rgb(0, 0, 0); 
-    margin-bottom: 15px;
-}
-
-.contact-info {
-    font-family: 'Baskervville SC', serif; 
-    font-size: 18px;
-    color: #1d3557;
-    font-weight: bold;
-}
-
-.motto {
-    font-family: 'Doto', serif; 
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-variation-settings: 
-    "ROND" 0;
-    color: #000000;
-
-}
-
-section {
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Raleway', sans-serif;
+    color: #444;
+    background-color: #fff;
+    padding: 2rem;
+    line-height: 1.6;
+    font-weight: 300; /* Thin, modern look */
+  }  
+  
+  /* Header styles */
+  header {
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 0;
-}
+    margin-bottom: 2rem;
+  }
+  
+  header h1 {
+    font-weight: 300; /* Thin */
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  nav a {
+    font-weight: 300;
+    margin: 0 10px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  nav a:hover {
+    color: #000;
+  }
 
-hr {
-    border: 3px solid #8b9dbf; 
-    border-radius: 5px; 
-    width: 80%; 
-    margin: 20px auto; 
-}
-
-h2 {
-    font-family: 'Montserrat', sans-serif; /* Apply Google Font */
-    font-size: 26px; /* Make it bigger */
-    color: #2a9d8f; /* Example color (Teal Green) */
-    text-transform: uppercase; /* Optional: Makes text uppercase */
-    letter-spacing: 1px; /* Optional: Increases letter spacing */
-    border-bottom: 2px solid #8b9dbf; /* Adds a subtle underline */
-    padding-bottom: 5px; /* Space between text and line */
-}
-
-.education-text {
-    font-size: 18px;
-    line-height: 1.6; /* Improve readability */
+  nav a.active {
+    color: #111;         /* darkest for selected tab */
     font-weight: 500;
-    color: #333; /* Dark gray text */
-    background-color: #f5f5f5; /* Light gray background */
-    padding: 15px;
-    border:3px solid #2a9d8f;
-}
-
-ul {
-    list-style-type: square; /* Change bullet points to squares */
-    color: #264653; /* Change text color */
-    font-size: 18px;
-    padding-left: 20px; /* Adjust indentation */
-}
-
-ul li {
-    margin-bottom: 8px; /* Adds spacing between list items */
-}
-
-.honors-list {
-    display: grid;
-    grid-template-columns: 1fr 2fr; /* First column (dt) smaller, second column (dd) wider */
-    gap: 10px; /* Adds spacing between rows */
-    padding: 10px;
-}
-
-.honors-list dt {
-    font-weight: bold;
-    font-size: 20px;
-    color: #e76f51; 
-}
-
-.honors-list dd {
-    font-style: italic;
-    color: #555; /* Slightly lighter gray */
-}
-
-a {
-    color: #2a9d8f; 
-    text-decoration: none; /* Removes underline */
-}
-
-a:hover {
-    color: #e76f51; 
-    text-decoration: underline; 
-    font-weight: bold;
-}
-
-.three-col {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
-    gap: 20px; /* Adds space between columns */
-    padding: 20px;
-}
-
-.card {
-    background-color: #f5f5f5; 
-    padding: 20px;
-    border-radius: 10px; /* Rounds the corners */
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow effect */
-    border: 2px solid #8b9dbf; 
-    text-align: center; 
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Hover effect transition */
-}
-
-.card:hover {
-    transform: scale(1.05); /* Slightly enlarges card on hover */
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
-}
-
-.one-col {
+  }
+  
+  /* Main content */
+  main {
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center everything horizontally */
-    justify-content: center; /* Center within the section */
-    text-align: center; /* Center text inside */
-    width: 50%; /* Adjusts container width */
-    margin: 0 auto; /* Centers container horizontally */
-    padding: 20px;
-}
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  
+  /* Image */
+  .main-img {
+    max-width: 300px;
+    height: auto;
+  }
+  
+  /* About section */
+  .about {
+    max-width: 400px;
+  }
 
-form {
-    width: 100%; /* Makes the form take the full width of .one-col */
-    display: flex;
-    flex-direction: column; /* Stack form elements vertically */
-    align-items: center;
-}
-
-label {
-    font-size: 18px;
-    margin-top: 10px;
-}
-
-input, textarea {
-    width: 100%; /* Makes inputs take the full width of the container */
-    padding: 10px;
-    margin-top: 5px;
-    border: 2px solid #8b9dbf; /* Adds a border */
-    border-radius: 5px; /* Softens corners */
-    font-size: 16px;
-}
-
-textarea {
-    resize: none; /* Prevents manual resizing */
-    height: 120px; /* Sets a fixed height */
-}
-
-button {
-    width: 100%;
-    padding: 12px;
-    background-color: #2a9d8f; /* Greenish color */
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
+  .intro {
+    margin-bottom: 1.2rem;
+  }
+  
+  .bio {
+    margin-bottom: 1.2rem;
+  }
+  
+  .bio2 {
+    margin-bottom: 1.2rem;
+  }
+  
+  /* Buttons */
+  .buttons {
+    margin-top: 1rem;
+  }
+  
+  .btn {
+    text-decoration: none;
+    border: 1px solid #aaa;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    color: #333;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+  }
+  
+  .btn:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Responsive layout */
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .main-img {
+      max-width: 80%;
+    }
+  }
+  
+  hr {
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 15px;
-    transition: background 0.3s ease-in-out;
-}
-
-button:hover {
-    background-color: #1d7764; /* Darker green on hover */
-}
-
-
+    height: 1px;
+    background-color: #ccc; /* light gray line */
+    margin: 2rem 0; /* space above and below */
+  }
+  

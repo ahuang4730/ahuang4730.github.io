@@ -1,4 +1,4 @@
-/* Reset basic styles */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,7 +11,7 @@
     background-color: #fff;
     padding: 2rem;
     line-height: 1.6;
-    font-weight: 300; /* Thin, modern look */
+    font-weight: 300; 
   }  
   
   /* Header styles */
@@ -21,7 +21,7 @@
   }
   
   header h1 {
-    font-weight: 300; /* Thin */
+    font-weight: 300; 
     font-size: 2.8rem;
     letter-spacing: 2px;
     margin-bottom: 0.5rem;
@@ -42,7 +42,7 @@
   }
 
   nav a.active {
-    color: #111;         /* darkest for selected tab */
+    color: #111;        
     font-weight: 500;
   }
   
@@ -53,17 +53,20 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    gap: 2rem;
+    gap: 6rem;
   }
   
   /* Image */
   .main-img {
-    max-width: 300px;
+    margin-top: 1rem;
+    max-width: 250px;
     height: auto;
   }
   
   /* About section */
   .about {
+    border-left: 1px solid #ccc;
+    padding-left: 2rem;
     max-width: 400px;
   }
 
@@ -113,7 +116,7 @@
   hr {
     border: none;
     height: 1px;
-    background-color: #ccc; /* light gray line */
-    margin: 2rem 0; /* space above and below */
+    background-color: #ccc; 
+    margin: 2rem 0; 
   }
   

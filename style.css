@@ -8,13 +8,12 @@
   body {
     font-family: 'Raleway', sans-serif;
     color: #444;
-    background-color: #fff;
+    background-color: #F5F5F5;
     padding: 2rem;
     line-height: 1.6;
     font-weight: 300; 
   }  
   
-  /* Header styles */
   header {
     text-align: center;
     margin-bottom: 2rem;
@@ -58,7 +57,7 @@
   
   /* Image */
   .main-img {
-    margin-top: 1rem;
+    margin-top: 6rem;
     max-width: 250px;
     height: auto;
   }
@@ -68,6 +67,8 @@
     border-left: 1px solid #ccc;
     padding-left: 2rem;
     max-width: 400px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .intro {

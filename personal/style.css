@@ -52,4 +52,56 @@
     background-color: #ccc;
     margin: 2rem 0;
   }
-  
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  justify-content: center;
+}
+
+.image-card {
+  padding: 5px;
+  border: 1.5px solid #000;
+  border-radius: 6px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+
+  display: flex;              
+  justify-content: center; 
+  align-items: center;
+  background-color: #eeeeee;
+
+}
+
+.image-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.image-card img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+}
+
+/* Lightbox (popup) */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  cursor: pointer;
+}

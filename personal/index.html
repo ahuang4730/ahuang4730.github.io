@@ -18,12 +18,48 @@
     </nav>
   </header>
   <hr />
+
   <main>
     <section class="about">
       <p class="intro">This is the Personal page.</p>
 
+      <hr />
+
+      <div class="image-gallery">
+        <div class="image-card">
+          <img src="/images/personal/img1.png" alt="Image 1">
+        </div>
+        <div class="image-card">
+          <img src="/images/personal/img2.png" alt="Image 2">
+        </div>
+        <div class="image-card">
+          <img src="img3.jpg" alt="Image 3">
+        </div>
+      </div>
+
+      <div id="lightbox" class="lightbox">
+        <img id="lightbox-img" src="">
+      </div>
+
     </section>
   </main>
   <hr />
+
+  <script>
+    const cards = document.querySelectorAll('.image-card img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    cards.forEach(img => {
+      img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightbox.style.display = 'flex';
+      });
+    });
+
+    lightbox.addEventListener('click', () => {
+      lightbox.style.display = 'none';
+    });
+  </script>
 </body>
 </html>

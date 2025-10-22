@@ -53,7 +53,38 @@
     margin: 2rem 0;
   }
 
+  .words {
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    text-align: center;
+  }
+
+  .intro-img {
+    position:relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 30rem;
+    height: auto;
+    border-radius: 4px;
+
+  }
+  
+
+  .custom-link {
+  color: inherit;
+  text-decoration: underline; 
+  text-decoration-thickness: 1px; 
+  text-underline-offset: 3px;  
+}
+
+.custom-link:hover {
+  color: #555; /* optional subtle hover effect */
+}
+
+
 .image-gallery {
+  margin-top: 10rem;
   display: flex;
   flex-wrap: wrap;
   gap: 5rem;
@@ -86,7 +117,6 @@
   display: block;
 }
 
-/* Lightbox (popup) */
 .lightbox {
   display: none;
   position: fixed;

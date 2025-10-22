@@ -141,7 +141,7 @@ hr {
     flex-direction: column;
     justify-content: flex-start; 
     align-items: stretch;
-    gap: 3rem;                
+    gap: 4rem;                
   }
 
   .project-info {

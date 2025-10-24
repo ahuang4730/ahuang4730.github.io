@@ -135,3 +135,11 @@
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .intro-img {
+    max-width: 90%;   /* shrink image relative to screen */
+    height: auto;     /* maintain proportions */
+    margin-top: 2rem; /* optional spacing tweak */
+  }
+}
